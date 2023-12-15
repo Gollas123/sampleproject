@@ -1,0 +1,11 @@
+<template>
+   <lightning-card title={dtitle}>
+        <lightning-input name="firstName" label="First Name" onchange={changeHandler}></lightning-input>
+        <lightning-input name="lastName" label="Last Name" onchange={changeHandler}></lightning-input>
+   </lightning-card>
+  <lightning-card title="Updated Values ">
+    First Name: <b style="color: green;"> {fullName.firstName} </b> <br/>
+    Last Name: <b style="color: green;">{fullName.lastName}</b>
+  </lightning-card>
+ 
+</template>
